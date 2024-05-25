@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E700495-4384-45A7-B94E-E07A92F5313E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pro1</RootNamespace>
+    <AssemblyName>pro1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\QuizStyle.css" />
+    <Content Include="Quiz.aspx" />
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="CSS\components\accordion.css" />
+    <Content Include="CSS\components\accordion.js" />
+    <Content Include="CSS\components\accordion.min.css" />
+    <Content Include="CSS\components\accordion.min.js" />
+    <Content Include="CSS\components\ad.css" />
+    <Content Include="CSS\components\ad.min.css" />
+    <Content Include="CSS\components\api.js" />
+    <Content Include="CSS\components\api.min.js" />
+    <Content Include="CSS\components\breadcrumb.css" />
+    <Content Include="CSS\components\breadcrumb.min.css" />
+    <Content Include="CSS\components\button.css" />
+    <Content Include="CSS\components\button.min.css" />
+    <Content Include="CSS\components\card.css" />
+    <Content Include="CSS\components\card.min.css" />
+    <Content Include="CSS\components\checkbox.css" />
+    <Content Include="CSS\components\checkbox.js" />
+    <Content Include="CSS\components\checkbox.min.css" />
+    <Content Include="CSS\components\checkbox.min.js" />
+    <Content Include="CSS\components\colorize.js" />
+    <Content Include="CSS\components\colorize.min.js" />
+    <Content Include="CSS\components\comment.css" />
+    <Content Include="CSS\components\comment.min.css" />
+    <Content Include="CSS\components\container.css" />
+    <Content Include="CSS\components\container.min.css" />
+    <Content Include="CSS\components\dimmer.css" />
+    <Content Include="CSS\components\dimmer.js" />
+    <Content Include="CSS\components\dimmer.min.css" />
+    <Content Include="CSS\components\dimmer.min.js" />
+    <Content Include="CSS\components\divider.css" />
+    <Content Include="CSS\components\divider.min.css" />
+    <Content Include="CSS\components\dropdown.css" />
+    <Content Include="CSS\components\dropdown.js" />
+    <Content Include="CSS\components\dropdown.min.css" />
+    <Content Include="CSS\components\dropdown.min.js" />
+    <Content Include="CSS\components\embed.css" />
+    <Content Include="CSS\components\embed.js" />
+    <Content Include="CSS\components\embed.min.css" />
+    <Content Include="CSS\components\embed.min.js" />
+    <Content Include="CSS\components\feed.css" />
+    <Content Include="CSS\components\feed.min.css" />
+    <Content Include="CSS\components\flag.css" />
+    <Content Include="CSS\components\flag.min.css" />
+    <Content Include="CSS\components\form.css" />
+    <Content Include="CSS\components\form.js" />
+    <Content Include="CSS\components\form.min.css" />
+    <Content Include="CSS\components\form.min.js" />
+    <Content Include="CSS\components\grid.css" />
+    <Content Include="CSS\components\grid.min.css" />
+    <Content Include="CSS\components\header.css" />
+    <Content Include="CSS\components\header.min.css" />
+    <Content Include="CSS\components\icon.css" />
+    <Content Include="CSS\components\icon.min.css" />
+    <Content Include="CSS\components\image.css" />
+    <Content Include="CSS\components\image.min.css" />
+    <Content Include="CSS\components\input.css" />
+    <Content Include="CSS\components\input.min.css" />
+    <Content Include="CSS\components\item.css" />
+    <Content Include="CSS\components\item.min.css" />
+    <Content Include="CSS\components\label.css" />
+    <Content Include="CSS\components\label.min.css" />
+    <Content Include="CSS\components\list.css" />
+    <Content Include="CSS\components\list.min.css" />
+    <Content Include="CSS\components\loader.css" />
+    <Content Include="CSS\components\loader.min.css" />
+    <Content Include="CSS\components\menu.css" />
+    <Content Include="CSS\components\menu.min.css" />
+    <Content Include="CSS\components\message.css" />
+    <Content Include="CSS\components\message.min.css" />
+    <Content Include="CSS\components\modal.css" />
+    <Content Include="CSS\components\modal.js" />
+    <Content Include="CSS\components\modal.min.css" />
+    <Content Include="CSS\components\modal.min.js" />
+    <Content Include="CSS\components\nag.css" />
+    <Content Include="CSS\components\nag.js" />
+    <Content Include="CSS\components\nag.min.css" />
+    <Content Include="CSS\components\nag.min.js" />
+    <Content Include="CSS\components\placeholder.css" />
+    <Content Include="CSS\components\placeholder.min.css" />
+    <Content Include="CSS\components\popup.css" />
+    <Content Include="CSS\components\popup.js" />
+    <Content Include="CSS\components\popup.min.css" />
+    <Content Include="CSS\components\popup.min.js" />
+    <Content Include="CSS\components\progress.css" />
+    <Content Include="CSS\components\progress.js" />
+    <Content Include="CSS\components\progress.min.css" />
+    <Content Include="CSS\components\progress.min.js" />
+    <Content Include="CSS\components\rail.css" />
+    <Content Include="CSS\components\rail.min.css" />
+    <Content Include="CSS\components\rating.css" />
+    <Content Include="CSS\components\rating.js" />
+    <Content Include="CSS\components\rating.min.css" />
+    <Content Include="CSS\components\rating.min.js" />
+    <Content Include="CSS\components\reset.css" />
+    <Content Include="CSS\components\reset.min.css" />
+    <Content Include="CSS\components\reveal.css" />
+    <Content Include="CSS\components\reveal.min.css" />
+    <Content Include="CSS\components\search.css" />
+    <Content Include="CSS\components\search.js" />
+    <Content Include="CSS\components\search.min.css" />
+    <Content Include="CSS\components\search.min.js" />
+    <Content Include="CSS\components\segment.css" />
+    <Content Include="CSS\components\segment.min.css" />
+    <Content Include="CSS\components\shape.css" />
+    <Content Include="CSS\components\shape.js" />
+    <Content Include="CSS\components\shape.min.css" />
+    <Content Include="CSS\components\shape.min.js" />
+    <Content Include="CSS\components\sidebar.css" />
+    <Content Include="CSS\components\sidebar.js" />
+    <Content Include="CSS\components\sidebar.min.css" />
+    <Content Include="CSS\components\sidebar.min.js" />
+    <Content Include="CSS\components\site.css" />
+    <Content Include="CSS\components\site.js" />
+    <Content Include="CSS\components\site.min.css" />
+    <Content Include="CSS\components\site.min.js" />
+    <Content Include="CSS\components\state.js" />
+    <Content Include="CSS\components\state.min.js" />
+    <Content Include="CSS\components\statistic.css" />
+    <Content Include="CSS\components\statistic.min.css" />
+    <Content Include="CSS\components\step.css" />
+    <Content Include="CSS\components\step.min.css" />
+    <Content Include="CSS\components\sticky.css" />
+    <Content Include="CSS\components\sticky.js" />
+    <Content Include="CSS\components\sticky.min.css" />
+    <Content Include="CSS\components\sticky.min.js" />
+    <Content Include="CSS\components\tab.css" />
+    <Content Include="CSS\components\tab.js" />
+    <Content Include="CSS\components\tab.min.css" />
+    <Content Include="CSS\components\tab.min.js" />
+    <Content Include="CSS\components\table.css" />
+    <Content Include="CSS\components\table.min.css" />
+    <Content Include="CSS\components\transition.css" />
+    <Content Include="CSS\components\transition.js" />
+    <Content Include="CSS\components\transition.min.css" />
+    <Content Include="CSS\components\transition.min.js" />
+    <Content Include="CSS\components\video.css" />
+    <Content Include="CSS\components\video.js" />
+    <Content Include="CSS\components\video.min.css" />
+    <Content Include="CSS\components\video.min.js" />
+    <Content Include="CSS\components\visibility.js" />
+    <Content Include="CSS\components\visibility.min.js" />
+    <Content Include="CSS\components\visit.js" />
+    <Content Include="CSS\components\visit.min.js" />
+    <Content Include="CSS\semantic.min.css" />
+    <Content Include="CSS\site.css" />
+    <Content Include="CSS\style.css" />
+    <Content Include="CSS\themes\default\assets\fonts\brand-icons.svg" />
+    <Content Include="CSS\themes\default\assets\fonts\icons.svg" />
+    <Content Include="CSS\themes\default\assets\fonts\outline-icons.svg" />
+    <Content Include="CSS\themes\default\assets\images\flags.png" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="img\cybersecurity_logo.svg" />
+    <Content Include="img\hadeed_logo.png" />
+    <Content Include="img\nfts_logo.svg" />
+    <Content Include="index\Phishing.html" />
+    <Content Include="JS\app.js" />
+    <Content Include="loginpage.aspx" />
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="CSS\themes\default\assets\fonts\brand-icons.eot" />
+    <Content Include="CSS\themes\default\assets\fonts\brand-icons.ttf" />
+    <Content Include="CSS\themes\default\assets\fonts\brand-icons.woff" />
+    <Content Include="CSS\themes\default\assets\fonts\brand-icons.woff2" />
+    <Content Include="CSS\themes\default\assets\fonts\icons.eot" />
+    <Content Include="CSS\themes\default\assets\fonts\icons.otf" />
+    <Content Include="CSS\themes\default\assets\fonts\icons.ttf" />
+    <Content Include="CSS\themes\default\assets\fonts\icons.woff" />
+    <Content Include="CSS\themes\default\assets\fonts\icons.woff2" />
+    <Content Include="CSS\themes\default\assets\fonts\outline-icons.eot" />
+    <Content Include="CSS\themes\default\assets\fonts\outline-icons.ttf" />
+    <Content Include="CSS\themes\default\assets\fonts\outline-icons.woff" />
+    <Content Include="CSS\themes\default\assets\fonts\outline-icons.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Defualt.aspx" />
+    <Content Include="CSS\Style2.css" />
+    <Content Include="JS\JavaScript1.js" />
+    <Content Include="SignupPage.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Defualt.aspx.cs">
+      <DependentUpon>Defualt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Defualt.aspx.designer.cs">
+      <DependentUpon>Defualt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignupPage.aspx.cs">
+      <DependentUpon>SignupPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignupPage.aspx.designer.cs">
+      <DependentUpon>SignupPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginpage.aspx.cs">
+      <DependentUpon>loginpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginpage.aspx.designer.cs">
+      <DependentUpon>loginpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz.aspx.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz.aspx.designer.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63727</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63727/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
